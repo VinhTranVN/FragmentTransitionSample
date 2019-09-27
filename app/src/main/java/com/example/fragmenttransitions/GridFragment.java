@@ -52,6 +52,7 @@ public class GridFragment extends Fragment implements KittenClickListener {
         getActivity().getSupportFragmentManager()
                 .beginTransaction()
                 .addSharedElement(holder.image, "kittenImage")
+                .addSharedElement(holder.text, "kittenText")
                 .replace(R.id.container, kittenDetails)
                 .addToBackStack(null)
                 .commit();
